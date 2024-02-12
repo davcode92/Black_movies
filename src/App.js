@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Entete from "./components/Entete";
+import MovieList from "./components/MovieList";
+import { useState } from "react";
+import Footer from "./components/Footer";
+import AdsComp from "./components/AdsComp";
 
 function App() {
+  const [search, setSearch] = useState("");
+  const [category, setCategory] = useState("ALL");
+  const handleCategory = (e) => {
+    setCategory(e.target.value);
+  };
+
+  const handleSearch = (e) => {
+    setSearch(e.target.value);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Entete handleSearch={handleSearch} handleCategory={handleCategory} />
+      <AdsComp />
+     
+      <MovieList search={search} category={category} />
+      <Footer />
     </div>
   );
 }
