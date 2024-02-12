@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Black_movies/static/css/main.b2738c05.css",
+    "main.js": "/Black_movies/static/js/main.e555bde4.js",
+    "static/js/592.2218abec.chunk.js": "/Black_movies/static/js/592.2218abec.chunk.js",
+    "index.html": "/Black_movies/index.html",
+    "main.b2738c05.css.map": "/Black_movies/static/css/main.b2738c05.css.map",
+    "main.e555bde4.js.map": "/Black_movies/static/js/main.e555bde4.js.map",
+    "592.2218abec.chunk.js.map": "/Black_movies/static/js/592.2218abec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2738c05.css",
+    "static/js/main.e555bde4.js"
+  ]
+}
